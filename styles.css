@@ -19,8 +19,11 @@
 .hero:before{-webkit-mask-image:radial-gradient(ellipse 56% 44% at 16% 19%,#000 0 42%,rgba(0,0,0,.72) 58%,transparent 78%);mask-image:radial-gradient(ellipse 56% 44% at 16% 19%,#000 0 42%,rgba(0,0,0,.72) 58%,transparent 78%);animation:cloudDrift 20s ease-in-out infinite alternate}
 .hero:after{-webkit-mask-image:radial-gradient(ellipse 31% 42% at 2% 64%,#000 0 32%,rgba(0,0,0,.7) 52%,transparent 74%),radial-gradient(ellipse 25% 31% at 94% 76%,#000 0 28%,rgba(0,0,0,.66) 48%,transparent 72%);mask-image:radial-gradient(ellipse 31% 42% at 2% 64%,#000 0 32%,rgba(0,0,0,.7) 52%,transparent 74%),radial-gradient(ellipse 25% 31% at 94% 76%,#000 0 28%,rgba(0,0,0,.66) 48%,transparent 72%);transform-origin:50% 100%;animation:foliageSway 4.8s ease-in-out infinite alternate}
 .hero-overlay{z-index:1}
-@keyframes cloudDrift{0%{background-position:var(--hero-x) 50%}100%{background-position:calc(var(--hero-x) + 12px) calc(50% + 2px)}}
-@keyframes foliageSway{0%{transform:translate3d(-1px,0,0) skewX(-.08deg)}100%{transform:translate3d(2px,0,0) skewX(.12deg)}}
+/* Movimento ambiental perceptível, limitado às máscaras de céu e folhagem. */
+.hero:before{-webkit-mask-image:radial-gradient(ellipse 42% 28% at 19% 18%,#000 0 40%,rgba(0,0,0,.76) 60%,transparent 82%);mask-image:radial-gradient(ellipse 42% 28% at 19% 18%,#000 0 40%,rgba(0,0,0,.76) 60%,transparent 82%);animation:cloudDrift 28s linear infinite alternate}
+.hero:after{-webkit-mask-image:radial-gradient(ellipse 24% 22% at 8% 69%,#000 0 34%,rgba(0,0,0,.72) 54%,transparent 78%),radial-gradient(ellipse 21% 24% at 95% 78%,#000 0 32%,rgba(0,0,0,.7) 52%,transparent 76%);mask-image:radial-gradient(ellipse 24% 22% at 8% 69%,#000 0 34%,rgba(0,0,0,.72) 54%,transparent 78%),radial-gradient(ellipse 21% 24% at 95% 78%,#000 0 32%,rgba(0,0,0,.7) 52%,transparent 76%);animation:foliageSway 4.4s ease-in-out infinite alternate}
+@keyframes cloudDrift{0%{background-position:var(--hero-x) 50%}100%{background-position:calc(var(--hero-x) + 56px) calc(50% - 5px)}}
+@keyframes foliageSway{0%{transform:translate3d(-2px,-1px,0) skewX(-.16deg)}100%{transform:translate3d(5px,1px,0) skewX(.2deg)}}
 .about-visual>img{filter:none}
 .owner-wrap{grid-template-columns:.8fr 1.2fr;gap:90px;align-items:start}
 .owner-form input,.owner-form select,.owner-form textarea{display:block;width:100%;margin-top:7px;background:var(--paper);border:1px solid #e3eaf2;border-radius:9px;padding:13px;color:var(--ink);font-size:13px;text-transform:none;outline:0;resize:vertical}
