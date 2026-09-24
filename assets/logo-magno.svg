@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" role="img" aria-labelledby="title desc">
+  <title id="title">Magno Imóveis</title><desc id="desc">Símbolo de montanhas em azul sobre o nome Magno Imóveis.</desc>
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#26a9e8"/><stop offset="1" stop-color="#1474d4"/></linearGradient></defs>
+  <path d="M12 38 34 16c3-3 8-3 11 0l15 16L79 7c3-4 9-4 12 0l29 38h-18L85 23 62 52 39 29 20 48H4z" fill="url(#g)"/>
+  <text x="5" y="72" fill="#f8fbff" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="800" letter-spacing="1">MAGNO</text>
+  <text x="68" y="91" fill="#f6bd16" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="9">IMÓVEIS</text>
+</svg>
